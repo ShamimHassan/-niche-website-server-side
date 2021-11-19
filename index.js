@@ -28,7 +28,7 @@ const run = async () => {
     // await bikeCollection.insertOne({})
 
     // load all bikes
-    app.get('/motorcycles', async (req, res)=> {
+    app.get('/bikes', async (req, res)=> {
         const result = await bikeCollection.find({}).toArray();
         res.json(result)
     });
