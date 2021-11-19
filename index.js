@@ -189,10 +189,10 @@ run().catch(console.dir);
 
 app.get('/', (req, res)=> {
   console.log("Bi-bike surver is working perfectly!")
-  res.send("Cycle Server running")
+  res.send("MotorCycle Server running")
 })
 
 
 app.listen(port, ()=>{
-  console.log("Bi-bike server is running now!!!", port)
+  console.log("Motorcycle server is running now!!!", port)
 })
