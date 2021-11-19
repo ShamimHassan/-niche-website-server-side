@@ -25,10 +25,10 @@ const run = async () => {
     const orderCollection = database.collection("orders");
     const addtocartCollection = database.collection("addtocart");
 
-    await bikeCollection.insertOne({})
+    // await bikeCollection.insertOne({})
 
     // load all bikes
-    app.get('/bikes', async (req, res)=> {
+    app.get('/motorcycles', async (req, res)=> {
         const result = await bikeCollection.find({}).toArray();
         res.json(result)
     });
